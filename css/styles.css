@@ -1,0 +1,200 @@
+/* Estilos generales */
+body {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de títulos */
+h1 {
+
+    color: #d80073;
+    margin-bottom: 20px;
+    transition: color 0.5s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+
+}
+
+h1:hover {
+    color: #ee1010;
+}
+
+
+h3 {
+    color: #d80073;
+    margin-bottom: 20px;
+    transition: color 0.5s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+h3:hover {
+    color: #f40909;
+}
+
+/* Contenedor de cartas */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-gap: 10px; /* Reducimos espacio entre cartas */
+    justify-content: center;
+    max-width: 500px; /* Ajusta el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos de cartas */
+.card {
+    width: 150px;
+    height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Lado frontal y trasero de la carta */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-front {
+    background: #ffb6c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Color especial para Extra */
+.red-text {
+    color: #d80073;
+    font-weight: bold;
+}
+
+.card-back {
+    background: #fff;
+    color: #113baf;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Imagen dentro de la carta */
+.card-back img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Boton 1 */
+.comic-button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffb6c1;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+}
+
+.comic-button1:hover {
+    background-color: #fff;
+    color: #170202;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button1:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+/* Boton 2 */
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0077d8;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+}
+
+.comic-button:hover {
+    background-color: #fff;
+    color: #170202;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+/* Boton 3 */
+.comic-button3 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffb6c1;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+}
+
+.comic-button3:hover {
+    background-color: #fff;
+    color: #170202;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button3:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+}
